@@ -1,11 +1,11 @@
 
+
 require 'csv'
 require 'rubygems'
 require 'zip'
 require 'net/http'
 
-require_relative 'zip_download'
-require_relative 'unzip_file'
+require_relative 'write_to_file'
 
 class MergeSort
   def merge_sort(list)
@@ -28,11 +28,7 @@ class MergeSort
     @b=sorted.concat(left).concat(right)
   end
   puts"Sorted and Saved"
-  def write_file
-  File.open("Sorted", 'w') { |file| file.puts(@b) }
-  end
 end
 
-@sort=MergeSort.new
-@sort.merge_sort($ar)
-@sort.write_file()
+
+

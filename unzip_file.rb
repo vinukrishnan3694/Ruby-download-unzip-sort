@@ -25,10 +25,9 @@ class UnzipFile
     end
   end
   puts"Unzip Completed"
+  
 end
 
-@unzip=UnzipFile.new
-@unzip.unzip_file("top","/home/vinu/projects/ruby")
 
 
 
